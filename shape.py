@@ -23,6 +23,6 @@ total_exercise_time = (strenght_time + arobic_time)/7
 
 Daily_cal_needs = resting_metobolic_rate + total_exercise_time
 
-Cals_needed_for_gain = Daily_cal_needs + 500
+(Cals_needed_for_gain) = round (Daily_cal_needs + 500)
 
-print("Well " + user_name + ", you need a total of " + str(Cals_needed_for_gain) + "each week in order to gain 1 pound of mucle each week.")
+print("Well " + user_name + ", you need a total of " + str(Cals_needed_for_gain) + " calories each week in order to gain 1 pound of mucle in that week.")
