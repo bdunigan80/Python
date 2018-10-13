@@ -4,29 +4,26 @@
 
 from tkinter import *
 
-class Application(Frame):
-    #"""A GUI Application with three buttons."""
+class Application(Frame):  #"""A GUI Application with three buttons."""
 
-    def __init__(self, master):
-        #This will initialise the frame
+    def __init__(self, master): #This will initialise the frame
 
         Frame.__init__(self, master)
         self.grid()
+        self.button_clicks =0
         self.create_widgets()
 
-    def create_widgets(self):
-    #Create 3 buttons that do nothing
 
-    #Create the first button
+    def create_widgets(self):    #Create 3 buttons that do nothing
+
       self.button = Button(self)
-      self.button.["text"] = "Total Clicks: 0"
+      self.button["text"] = "Total Clicks: 0"
       self.button["command"] = self.update_count
       self.button.grid()
 
-    def update_count(self):
-        #Increase the click count and display the new totlal
-        self.button_clicks + 1
-        self.button["text"] "Total Clicks: " + str(self.button_clicks)
+    def update_count(self):     #Increase the click count and display the new total.
+      self.button_clicks + 1
+      self.button["text"] = "Total Clicks: " + str(self.button_clicks)
 
 root = Tk()
 
