@@ -1,8 +1,8 @@
+#Project: Guui Window with three buttons
+#Creator: Brian Dunigan
+#Creation date: 10-13-2018
+
 from tkinter import *
-
-
-
-
 
 class Application(Frame):
     #"""A GUI Application with three buttons."""
